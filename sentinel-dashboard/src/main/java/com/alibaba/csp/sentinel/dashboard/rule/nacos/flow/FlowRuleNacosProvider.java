@@ -48,4 +48,14 @@ public class FlowRuleNacosProvider implements DynamicRuleProvider<List<FlowRuleE
         }
         return converter.convert(rules);
     }
+
+//    @Override
+//    public List<FlowRuleEntity> getRules(String appName) throws Exception {
+//        return NacosConfigUtil.getRuleEntitiesFromNacos(
+//                this.configService,
+//                appName,
+//                NacosConfigUtil.FLOW_DATA_ID_POSTFIX,
+//                FlowRuleEntity.class
+//        );
+//    }
 }
